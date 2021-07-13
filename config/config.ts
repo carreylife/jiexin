@@ -1,6 +1,7 @@
 import { defineConfig } from 'umi';
 import pageRoutes from './router.config';
 import webpackPlugin from './plugin.config';
+import defaultSettings from './defaultSettings';
 
 export default defineConfig({
   nodeModulesTransform: {
@@ -9,7 +10,7 @@ export default defineConfig({
   routes: pageRoutes,
   fastRefresh: {},
   theme: {
-    '@primary-color': '#1890ff',
+    'primary-color': defaultSettings.primaryColor,
   },
   lessLoader: {
     lessOptions: {

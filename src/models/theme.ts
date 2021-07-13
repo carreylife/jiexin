@@ -1,5 +1,5 @@
 import { message } from 'antd';
-import themeColorClient from '@/pages/home/themeClient';
+import { themeColorClient } from '@/utils';
 
 type themeState = {
   primaryColor: string;

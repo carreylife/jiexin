@@ -6,7 +6,10 @@
     "postinstall": "umi generate tmp",
     "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
     "test": "umi-test",
-    "test:coverage": "umi-test --coverage"
+    "test:coverage": "umi-test --coverage",
+    "clean": "rm dist/bundle.js",
+    "start:snow": "snowpack dev",
+    "build:snow": "snowpack build"
   },
   "gitHooks": {
     "pre-commit": "lint-staged"
@@ -22,7 +25,6 @@
   "dependencies": {
     "@ant-design/colors": "^3.0.0",
     "@ant-design/pro-layout": "^6.5.0",
-    "@hekit/hekit-style": "^1.1.8",
     "polished": "^4.1.3",
     "react": "17.x",
     "react-dom": "17.x",
@@ -37,6 +39,8 @@
     "lint-staged": "^10.0.7",
     "prettier": "^2.2.0",
     "typescript": "^4.1.2",
-    "yorkie": "^2.0.0"
+    "umi-types": "^0.5.14",
+    "yorkie": "^2.0.0",
+    "snowpack": "^3.8.1"
   }
 }
